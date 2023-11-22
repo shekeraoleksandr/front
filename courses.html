@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #157afe;
+      padding: 10px;
+      display: flex;
+      justify-content: left;
+    }
+
+    header h2 {
+      margin: 5px 0 0 10px;
+    }
+
+    header img {
+      margin: 0 0 0 10px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #157afe;
+      height: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav li {
+      margin-right: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    main {
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .login-button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      margin-left: auto;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="data/book-half.svg" alt="Лого сайту">
+  <h2>E-learning</h2>
+  <button class="login-button" onclick="redirectToLogin()">Login</button>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a href="contact.html">Contact us</a></li>
+  </ul>
+</nav>
+
+<main>
+  <table>
+    <caption>Наші курси</caption>
+    <thead>
+    <tr>
+      <th>Картинка</th>
+      <th>Назва</th>
+      <th>Опис</th>
+      <th>Час проходження</th>
+      <th>Ціна</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><img src="https://www.totaljobs.com/advice/wp-content/uploads/graphic-designer-job-description.jpg" alt="Курс 1" width="300" height="200"></td>
+      <td>Графічний дизайн</td>
+      <td>Студенти цього курсу отримають можливість вивчити основні інструменти
+        та програми для графічного дизайну, такі як Adobe Photoshop, Illustrator і InDesign.
+        Вони зможуть розібратися в техніках композиції, використанні кольору,
+        та розміщенні тексту для створення візуально здорових та естетично приємних макетів.</td>
+      <td>10 годин</td>
+      <td>10 $</td>
+    </tr>
+
+    <tr>
+      <td><img src="https://cdn-attachments.timesofmalta.com/161720d2d73196098f3bc7896777216ff157c89d-1651561144-5c8764f4-1920x1280.jpg" alt="Курс 2" width="300" height="200"></td>
+      <td>Базова математика</td>
+      <td>Учасники курсу матимуть можливість ознайомитися з основними алгебраїчними
+        та геометричними концепціями, вивчити правила розв'язання різноманітних математичних завдань,
+        а також освоїть навички логічного мислення та аналітичний підхід до вирішення завдань.</td>
+      <td>21 год 30 хв</td>
+      <td>30 $</td>
+    </tr>
+
+    <!-- Курс 3 -->
+    <tr>
+      <td><img src="https://htcolledge.sumdu.edu.ua/images/2020/05/04/elektrika.jpg" alt="Курс 3" width="300" height="200"></td>
+      <td>Електромеханік</td>
+      <td>Учасники матимуть можливість вивчити принципи функціонування електричних машин,
+        електроніки та автоматики, а також засоби автоматизації виробничих процесів.
+        Курс включає в себе практичні завдання, які допоможуть студентам застосовувати теоретичні знання на практиці.</td>
+      <td>150 годин</td>
+      <td>150 $</td>
+    </tr>
+
+    <!-- Курс 4 -->
+    <tr>
+      <td><img src="https://cdn.wccftech.com/wp-content/uploads/2016/06/linux-tux-console1.jpg" alt="Курс 4" width="300" height="200"></td>
+      <td>Управління системами лінукс</td>
+      <td>Студенти отримають практичні навички з установки, налаштування та підтримки операційних систем Linux,
+        а також засвоять методи забезпечення безпеки та вирішення проблем.
+        Курс також включає в себе ознайомлення з інструментами автоматизації, такими як Ansible,
+        що дозволяє ефективно керувати конфігурацією серверів.</td>
+      <td>18 годин</td>
+      <td>20 $</td>
+    </tr>
+
+    <!-- Курс 5 -->
+    <tr>
+      <td><img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/8a4/ba9/fec/8a4ba9fece64df495770fc9a5bcd1300.png" alt="Курс 5" width="300" height="200"></td>
+      <td>C#</td>
+      <td>Студенти отримають можливість писати програми на мові C# в середовищі розробки .NET,
+        навчаться створювати та використовувати класи, взаємодіяти з об'єктами,
+        та освоють основні паттерни програмування. Курс також включає в себе вивчення роботи зі змінними,
+        умовними конструкціями, циклами та введенням/виведенням даних./td>
+      <td>12 годин</td>
+      <td>12 $</td>
+    </tr>
+    </tbody>
+  </table>
+
+</main>
+<footer>
+  <div id="contact-info" class="PersonalInfo">
+    <p>Contact info:</p>
+    <p>Oleksandr Shekera</p>
+    <p>example@email.com</p>
+    <p>+111 111 11 11</p>
+  </div>
+</footer>
+<script>
+  function redirectToLogin() {
+    window.location.href = 'login.html';
+  }
+</script>
+</body>
+</html>
