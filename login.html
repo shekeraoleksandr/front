@@ -1,84 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Login Page </title>
-    <style>
-        Body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            text-align: center;
-        }
-
-        button {
-            background-color: #157afe;
-            width: 100%;
-            color: #ffffff;
-            padding: 15px;
-            margin: 10px 0px;
-            border: none;
-            cursor: pointer;
-        }
-
-        form {
-            border: 3px solid #ffffff;
-            padding-top: 30%;
-        }
-
-        input[type=text], input[type=password] {
-            width: 100%;
-            margin: 8px 0;
-            padding: 12px 20px;
-            display: inline-block;
-            border: 2px solid #000000;
-            box-sizing: border-box;
-        }
-
-        button:hover {
-            opacity: 0.7;
-        }
-
-        .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            margin: 10px 5px;
-        }
-
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        form h1 {
-            color: #157afe;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CodingSchool</title>
 </head>
 <body>
-<form>
-    <h1> E-Learning </h1>
-    <div class="container">
-        <label>Username : </label>
-        <input type="text" placeholder="Enter Username" name="username" required>
-        <label>Password : </label>
-        <input type="password" placeholder="Enter Password" name="password" required>
-        <button type="submit">Login</button>
-        <input type="checkbox" checked="checked"> Remember me
-        <button type="button" class="cancelbtn" onclick="redirectToLogin()"> Cancel</button>
-        Forgot <a href="#"> password? </a>
-    </div>
-</form>
+<!-- END NAVIGATION-->
 
-<script>
-    function redirectToLogin() {
-        window.location.href = 'index.html';
-    }
-</script>
+<div class="video_nd_txt_div">
+    <div class="video_div">
+        <video autoplay muted loop class="Bg_video"  >
+            <source src="./video.mp4" />
+        </video>
+    </div>
+    <div class="blue_color_div"></div>
+</div>
+
+<!-- end video bckground-->
+
+<div class="logindiv" id="loginBox">
+    <h1 class="login_heading">Log-in</h1>
+    <p class="CloseLoginDivBttn" id="closelogindiv">+</p>
+
+    <div class="logindiv2">
+        <form id="login_form">
+            <input
+                    type="text"
+                    name="username"
+                    id="username-field"
+                    class="login-form-field"
+                    placeholder="Enter your nickname"
+                    required
+            />
+            <br />
+            <input
+                    type="password"
+                    name="password"
+                    id="password-field"
+                    class="login-form-field"
+                    placeholder="Enter your password"
+            />
+            <br />
+            <input type="submit" value="Login" id="login-form-submit" />
+        </form>
+    </div>
+    <p class="para">
+        Don't have Account ?<a href="signup.html" id="SwitchtoSignUp"> Sign-Up</a> Here.
+    </p>
+</div>
 </body>
 </html>

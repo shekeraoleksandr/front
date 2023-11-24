@@ -1,203 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #ffffff;
-            color: #157afe;
-            padding: 10px;
-            display: flex;
-        }
-
-        header h2 {
-            margin: 5px 0 0 10px;
-        }
-
-        header img {
-            margin: 0 0 0 10px;
-        }
-
-        nav {
-            text-align: center;
-            background-color: #157afe;
-            height: 40px;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav li {
-            margin-right: 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        p {
-            margin-bottom: 10px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .login-button {
-            background-color: #4caf50;
-            color: white;
-            padding: 10px 20px;
-            margin-left: auto;
-            margin-right: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, , initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>E-learning</title>
 </head>
-
 <body>
-
-<header>
-    <img src="data/book-half.svg" alt="Лого сайту">
-    <h2>E-learning</h2>
-    <button class="login-button" onclick="redirectToLogin()">Login</button>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="contact.html">Contact us</a></li>
-    </ul>
-</nav>
-
-<main>
-    <aside id="article1">
-        <h2>Причини обрати нас</h2>
-        <ol>
-            <li>Широкий вибір курсів</li>
-            <li>Інтерактивне навчання</li>
-            <li>Гнучкі умови навчання</li>
-            <li>Персоналізоване супроводження</li>
-        </ol>
-    </aside>
-
-    <a href="https://twitter.com/Cobratate" target="_blank">Наші соцмережі</a>
-
-    <p>Наша платформа навчання -
-        це інноваційне середовище, призначене для надання високоякісної та доступної освіти.
-        Ми прагнемо створити простір, де кожен може розвивати свої здібності
-        та отримати нові знання з різних галузей.
-            <span style="color: #3700ff;"><br><br>Широкий вибір курсів для будь-якого смаку та рівня навчання.<br></span>
-    </p>
-    <p><i>Незалежно від того, чи ви новачок в обраній галузі,
-        чи досвідчений фахівець, наші курси розроблені так, щоб вони задовольняли різні потреби та рівні учасників.
-        Від загальних основ до продвинутих тем - у нас є щось для кожного.</i></p>
-
-    <!-- Таблиця -->
-    <table>
-        <caption>Популярні курси</caption>
-        <thead>
-        <tr>
-            <th>Картинка</th>
-            <th>Назва</th>
-            <th>Опис</th>
-            <th>Час проходження</th>
-            <th>Ціна</th>
-        </tr>
-        </thead>
-        <tfoot>
-        <tr>
-            <td colspan="5">
-                <a href="https://www.coursera.org/" target="_blank">Дивитися більше</a>
-            </td>
-        </tr>
-        </tfoot>
-        <tbody>
-        <tr>
-            <td><img src="https://www.totaljobs.com/advice/wp-content/uploads/graphic-designer-job-description.jpg" alt="Курс 1" width="300" height="200"></td>
-            <td>Графічний дизайн</td>
-            <td>Студенти цього курсу отримають можливість вивчити основні інструменти
-                та програми для графічного дизайну, такі як Adobe Photoshop, Illustrator і InDesign.
-                Вони зможуть розібратися в техніках композиції, використанні кольору,
-                та розміщенні тексту для створення візуально здорових та естетично приємних макетів.</td>
-            <td>10 годин</td>
-            <td>10 $</td>
-        </tr>
-
-        <tr>
-            <td><img src="https://cdn-attachments.timesofmalta.com/161720d2d73196098f3bc7896777216ff157c89d-1651561144-5c8764f4-1920x1280.jpg" alt="Курс 2" width="300" height="200"></td>
-            <td>Базова математика</td>
-            <td>Учасники курсу матимуть можливість ознайомитися з основними алгебраїчними
-                та геометричними концепціями, вивчити правила розв'язання різноманітних математичних завдань,
-                а також освоїть навички логічного мислення та аналітичний підхід до вирішення завдань.</td>
-            <td>21 год 30 хв</td>
-            <td>30 $</td>
-        </tr>
-        </tbody>
-    </table>
-</main>
-
-<footer>
-    <div id="contact-info" class="PersonalInfo">
-        <p>Contact info:</p>
-        <p>Oleksandr Shekera</p>
-        <p>example@email.com</p>
-        <p>+111 111 11 11</p>
+<!-- START NAVIGATION-->
+<nav class="navbar">
+    <div class="fst_navDiv">
+        <a class="" href="home.html">E-learning</a>
+        <span class="">Learn and Implement </span>
     </div>
+
+    <div class="Snd_navDiv">
+        <ul class="">
+            <li class=""><a href="index.html" class="a_tag_elm"> Home</a></li>
+            <li class="">
+                <a href="courses.html" class="a_tag_elm"
+                >Courses</a
+                >
+            </li>
+            <li class=""><a href="contact.html" class="a_tag_elm">Contact us</a></li>
+        </ul>
+    </div>
+
+    <div class="Snd_navDiv indexSecondNav">
+        <ul class="">
+            <li><a href="login.html" id="Login" class="a_tag_elm">Log in</a></li>
+            <li><a href="signup.html" id="formDisplay" class="a_tag_elm">Sign up</a></li>
+        </ul>
+    </div>
+
+</nav>
+<!-- END NAVIGATION-->
+
+<!-- video and text div -->
+<div class="video_nd_txt_div">
+    <div class="video_div">
+        <video autoplay muted loop class="Bg_video" loop>
+            <source src="./video.mp4" />
+        </video>
+    </div>
+
+    <div class="blue_color_div"></div>
+
+    <div class="txt_div">
+        <h1>Welcome to E-learn</h1>
+        <small>Learn and Implement</small>
+    </div>
+</div>
+<!-- end video div-->
+
+<!-- Courses info div -->
+<div id="allcourses">
+    <h1 class="courseHeading">Select Your Preferred Course</h1>
+
+    <div class="courses">
+        <!-- ----------------------------Html and CSS-------------------------------- -->
+        <div class="course1">
+            <div class="courseImgDiv">
+                <img
+                        class="courseImg"
+                        src="./data/img1.jpeg"
+                        alt="this is image"
+                />
+            </div>
+            <div class="coursePriceDetailTimeDiv">
+                <h2 class="courseName">HTML and CSS</h2>
+                <p class="courseDetails">
+                    Lean the Foundations of HTML & CSS to Create Fully Customized,
+                    Mobile Responsive Web Pages.
+                </p>
+                <p class="coursePrice">$ 75</p>
+                <p class="courseTime">Total time <span>20 Hrs</span></p>
+            </div>
+            <button data-tag="img1" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ----------------------------JavaScript-------------------------------- -->
+        <div class="course1">
+            <div class="courseImgDiv">
+                <img
+                        class="courseImg"
+                        src="./data/img2.jpeg"
+                        alt="this is image"
+                />
+            </div>
+            <div class="coursePriceDetailTimeDiv">
+                <h2 class="courseName">JavaScript</h2>
+                <p class="courseDetails">
+                    An advanced JavaScript course for everyone! Scope, closures,
+                    prototypes, 'this', build your own framework, and more.
+                </p>
+                <p class="coursePrice">$ 60</p>
+                <p class="courseTime">Total time <span>30 Hrs</span></p>
+            </div>
+            <button data-tag="img2" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ------------------------------C++-------------------------------- -->
+        <div class="course1">
+            <div class="courseImgDiv">
+                <img
+                        class="courseImg"
+                        src="./data/img3.jpeg"
+                        alt="this is image"
+                />
+            </div>
+            <div class="coursePriceDetailTimeDiv">
+                <h2 class="courseName">C++</h2>
+                <p class="courseDetails">
+                    Obtain Modern C++ Object-Oriented Programming (OOP) and STL skills
+                    needed for game, system, and application development.
+                </p>
+                <p class="coursePrice">$ 60</p>
+                <p class="courseTime">Total time <span>30 Hrs</span></p>
+            </div>
+            <button data-tag="img3" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ------------------------------Python-------------------------------- -->
+        <div class="course1">
+            <div class="courseImgDiv">
+                <img
+                        class="courseImg"
+                        src="./data/img4.jpeg"
+                        alt="this is image"
+                />
+            </div>
+            <div class="coursePriceDetailTimeDiv">
+                <h2 class="courseName">Python</h2>
+                <p class="courseDetails">
+                    Learn real-life Python skills by creating Python database apps,
+                    Python web apps, Python scrapers, & many more.
+                </p>
+                <p class="coursePrice">$ 60</p>
+                <p class="courseTime">Total time <span>40 Hrs</span></p>
+            </div>
+            <button data-tag="img4" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------C#---------------------------------- -->
+        <div class="course1">
+            <div class="courseImgDiv">
+                <img
+                        class="courseImg"
+                        src="./data/img5.jpeg"
+                        alt="this is image"
+                />
+            </div>
+            <div class="coursePriceDetailTimeDiv">
+                <h2 class="courseName">C#</h2>
+                <p class="courseDetails">
+                    An in-depth, step-by-step guide to classes, interfaces and
+                    object-oriented programming (OOP) with C#.
+                </p>
+                <p class="coursePrice">$ 75</p>
+                <p class="courseTime">Total time <span>30 Hrs</span></p>
+            </div>
+            <button data-tag="img5" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- ------------------------------Bootstrap 4-------------------------------- -->
+        <div class="course1">
+            <div class="courseImgDiv">
+                <img
+                        class="courseImg"
+                        src="./data/img6.jpeg"
+                        alt="this is image"
+                />
+            </div>
+            <div class="coursePriceDetailTimeDiv">
+                <h2 class="courseName">Bootstrap 4</h2>
+                <p class="courseDetails">
+                    Master Bootstrap 4 and build real world themes while learning
+                    HTML5 semantics & CSS3.
+                </p>
+                <p class="coursePrice">$ 60</p>
+                <p class="courseTime">Total time <span>10 Hrs</span></p>
+            </div>
+            <button data-tag="img6" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------React.Js--------------------------------- -->
+        <div class="course1">
+            <div class="courseImgDiv">
+                <img
+                        class="courseImg"
+                        src="./data/img7.jpeg"
+                        alt="this is image"
+                />
+            </div>
+            <div class="coursePriceDetailTimeDiv">
+                <h2 class="courseName">React.JS</h2>
+                <p class="courseDetails">
+                    Dive in and learn React.js from scratch! Learn Reactjs, Hooks,
+                    Redux, React Routing, Animations, Next.js and way more.
+                </p>
+                <p class="coursePrice">$ 60</p>
+                <p class="courseTime">Total time <span>40 Hrs</span></p>
+            </div>
+            <button data-tag="img7" class="addtocartbtn">Add to Cart</button>
+        </div>
+
+        <!-- --------------------------------Angular--------------------------------- -->
+        <div class="course1">
+            <div class="courseImgDiv">
+                <img
+                        class="courseImg"
+                        src="./data/img8.jpeg"
+                        alt="this is image"
+                />
+            </div>
+            <div class="coursePriceDetailTimeDiv">
+                <h2 class="courseName">Angular</h2>
+                <p class="courseDetails">
+                    Master Angular and build awesome, reactive web apps with the
+                    successor of Angular.js
+                </p>
+                <p class="coursePrice">$ 50</p>
+                <p class="courseTime">Total time <span>40 Hrs</span></p>
+            </div>
+            <button data-tag="img8" class="addtocartbtn">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------Footer------------------------------- -->
+<footer class="mainFooter homefooter">
+    <h4>Contact info:</h4>
+    <small>Oleksandr Shekera</small>
+    <small>example@email.com</small>
+    <small>+111 111 11 11</small>
+    <ul>
+        <h6>Contact Us</h6>
+        <li class="footerLi"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa_custom"></i></a></li>
+        <li class="footerLi"><a href="https://twitter.com"><i class="fab fa-twitter fa_custom"></i></a></li>
+        <li class="footerLi"><a href="https://www.gmail.com/"><i class="far fa-envelope fa_custom"></i></a></li>
+    </ul>
 </footer>
 
-<script>
-    function redirectToLogin() {
-        window.location.href = 'login.html';
-    }
-</script>
 </body>
-
 </html>

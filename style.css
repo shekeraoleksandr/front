@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Newsreader&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Newsreader&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #56859e;
+}
+
+/* ------------------------------------Navigation Bar--------------------------------- */
+.navbar {
+    width: 100%;
+    display: flex;
+    background-color: #264653;
+    height: 80px;
+    gap: 5px;
+    justify-content: space-around;
+    font-size: 20px;
+    position: fixed;
+    z-index: 2;
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px #000;
+    border-bottom: 3px solid #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.fst_navDiv {
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fst_navDiv a {
+    font-size: 30px;
+    margin-right: 10px;
+    color: bisque;
+    text-decoration: none;
+}
+
+.fst_navDiv span {
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.Snd_navDiv {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    padding-right: 21px;
+    position: relative;
+}
+
+.indexSecondNav {
+    justify-content: flex-end;
+}
+
+.logout_li {
+    position: absolute;
+    right: 58px;
+}
+
+.secdiv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Snd_navDiv ul li {
+    text-decoration: none;
+    display: inline;
+}
+
+.a_tag_elm {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.a_tag_elm:hover {
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #0e3347;
+    cursor: pointer;
+}
+
+/* ------------------------------------Home page Video Div--------------------------------- */
+.video_nd_txt_div {
+    position: relative;
+    height: 100%;
+    z-index: -1;
+}
+
+.video_div {
+    position: relative;
+}
+
+.Bg_video {
+    height: 100%;
+    width: 100%;
+}
+
+.blue_color_div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #225470;
+    opacity: 0.8;
+}
+
+.txt_div {
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 38%;
+    text-align: center;
+    color: #fff;
+    gap: 10px;
+    height: 120px;
+}
+
+.txt_div h1 {
+    font-size: 40px;
+}
+
+.txt_div small {
+    font-size: 20px;
+}
+
+.platformdetails {
+    position: absolute;
+    z-index: 1;
+    bottom: 30%;
+    left: 30%;
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------------Index page Login form --------------------------------- */
+.logindiv {
+    visibility: visible;
+    position: absolute;
+    top: 21%;
+    left: 555px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 450px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 0px 6px 6px grey;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_heading {
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#SwitchtoSignUp {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.logindiv2 {
+    text-align: center;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+form > input {
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: solid 1px black;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 30px;
+}
+
+#login_form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#login-form-submit {
+    color: #fff;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 60%;
+    height: 30px;
+    text-decoration: none;
+    border: 1px solid black;
+    margin: 10px auto;
+}
+
+#login-form-submit:hover {
+    background-color: darkblue;
+}
+
+.CloseLoginDivBttn {
+    position: absolute;
+    top: -9px;
+    right: 0px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+/* ------------------------------------Index page SignUp Form--------------------------------- */
+#signUpForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#signUpDiv {
+    width: 400px;
+    height: 450px;
+    background: white;
+    position: relative;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+    box-shadow: 0px 0px 6px 6px grey;
+}
+
+.inputvalitation {
+    border-radius: 5px;
+    width: 80%;
+    height: 28px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+#signUpDiv h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#signUpForm input:focus-visible {
+    outline: none;
+}
+
+#switchToLogin {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#closeForm {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 800;
+    width: fit-content;
+    margin: 0px;
+    height: auto;
+    transform: rotate(45deg);
+}
+
+#signUpButton {
+    color: #fff;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+#signUpButton:hover {
+    background-color: darkblue;
+}
+
+.switchText {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: flex-end;
+}
+
+.signDiv {
+    visibility: hidden;
+    height: 350px;
+    width: 327px;
+    position: absolute;
+    top: 140px;
+    left: 551px;
+    margin-top: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: black;
+}
+
+/* ------------------------------------Home Page Courses info Div--------------------------------- */
+#allcourses {
+    padding-top: 85px;
+}
+
+.courses {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2px;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 30px;
+    min-height: calc(100vh - 213px);
+}
+
+.courseHeading {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+.courseName {
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+.course1 {
+    height: 340px;
+    width: 30%;
+    background-color: #1f586e;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 2em 1em 4em / 0.5em 3em;
+    margin-top: 45px;
+    position: relative;
+    display: flex;
+    gap: 7px;
+    transform: scale(1);
+    transition: transform.5s, opacity.5s;
+    color: whitesmoke;
+}
+
+.course1:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+    box-sizing: border-box;
+    border: 2px solid black;
+    color: antiquewhite;
+}
+
+.courseImgDiv {
+    height: 250px;
+    width: 240%;
+    margin: 5px;
+}
+
+.courseImg {
+    height: 99%;
+    width: 99%;
+    border-radius: 8px;
+}
+
+.coursePrice {
+    margin-top: 30px;
+}
+
+.courseTime span {
+    font-weight: 800;
+}
+
+.addtocartbtn {
+    position: absolute;
+    bottom: 35px;
+    right: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 45px;
+    width: 120px;
+    font-weight: 700;
+}
+
+.addtocartbtn:hover {
+    background-color: #1f586e;
+    color: whitesmoke;
+}
+
+/* ------------------------------------Footer CSS--------------------------------- */
+.mainFooter {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
+    color: white;
+    background-color: #2f3e46;
+    flex-direction: column;
+    gap: 10px;
+    height: 133px;
+}
+
+.mainFooter ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.mainFooter ul h6 {
+    display: flex;
+    align-items: center;
+}
+
+.footerLi i {
+    font-size: 25px;
+}
+
+.footerLi i:hover {
+    cursor: pointer;
+}
+
+.profileFooter {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.fa_custom{
+    color: #dddddd;
+}
+
+
+
+
+
+
+
+
