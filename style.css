@@ -372,7 +372,7 @@ form > input {
     display: flex;
     gap: 7px;
     transform: scale(1);
-    transition: transform.5s, opacity.5s;
+    transition: transform .5s, opacity .5s;
     color: whitesmoke;
 }
 
@@ -456,15 +456,94 @@ form > input {
     cursor: pointer;
 }
 
-.profileFooter {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}
-
-.fa_custom{
+.fa_custom {
     color: #dddddd;
 }
+
+/* ------------------------------------Feedback  Form--------------------------------- */
+#feedback {
+    padding-top: 80px;
+    padding-left: 38%;
+}
+
+#feedbackForm {
+    height: 400px;
+    z-index: 3;
+    background: white;
+    width: 350px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 6px 5px grey;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+#closeFeedbackForm {
+    position: absolute;
+    top: -4px;
+    right: 0px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#feedForm {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.feedbackInput {
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+#feedForm > textarea {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 300px;
+}
+
+.feedBackSumbitButton {
+    color: #fff;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.feedBackResetButton {
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.feedBackResetButton:hover {
+    color: #fff;
+    background-color: cornflowerblue;
+}
+
+.feedBackSumbitButton:hover {
+    background-color: darkblue;
+}
+
 
 
 
