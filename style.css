@@ -462,8 +462,9 @@ form > input {
 
 /* ------------------------------------Feedback  Form--------------------------------- */
 #feedback {
+    padding-left: 44%;
     padding-top: 80px;
-    padding-left: 38%;
+
 }
 
 #feedbackForm {
