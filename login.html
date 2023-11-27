@@ -48,37 +48,30 @@
 
         .container {
             max-width: 400px;
-            margin: 0 auto;
+            margin: 400px auto 0;
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        form h1 {
-            color: #157afe;
-        }
     </style>
 </head>
 <body>
-<form>
-    <h1> E-Learning </h1>
     <div class="container">
+        <h1>E-Learning </h1>
         <label>Username : </label>
         <input type="text" placeholder="Enter Username" name="username" required>
         <label>Password : </label>
         <input type="password" placeholder="Enter Password" name="password" required>
         <button type="submit">Login</button>
         <input type="checkbox" checked="checked"> Remember me
-        <button type="button" class="cancelbtn" onclick="redirectToLogin()"> Cancel</button>
+        <button type="button" class="cancelbtn"><a href="index.html">Cancel</a></button>
         Forgot <a href="#"> password? </a>
     </div>
-</form>
+
 
 <script>
-    function redirectToLogin() {
-        window.location.href = 'index.html';
-    }
 </script>
 </body>
 </html>
